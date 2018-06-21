@@ -37,8 +37,8 @@ public class FragmentOne extends Fragment {
         recyclerView.setAdapter(adapterFragment);
         WrappingGridLayoutManager gridLayoutManager = new WrappingGridLayoutManager(getContext(), 2, GridLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(gridLayoutManager);
-        //消除滑动卡顿现象
         recyclerView.setHasFixedSize(true);//固定自身size不受adapter变化影响
+        //消除滑动卡顿现象 ...
         recyclerView.setNestedScrollingEnabled(false);//限制recyclerview自身滑动特性,滑动全部靠scrollview完成
         initData();
     }

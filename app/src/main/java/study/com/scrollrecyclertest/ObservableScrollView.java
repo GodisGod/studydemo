@@ -38,5 +38,6 @@ public class ObservableScrollView extends NestedScrollView {
     public interface ScrollViewListener {
         void onScrollChanged(NestedScrollView scrollView, int x, int y, int oldx, int oldy);
     }
+
 }
 
