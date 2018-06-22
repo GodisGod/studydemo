@@ -44,7 +44,7 @@ public class FragmentOne extends Fragment {
     }
 
     private void initData() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 6; i++) {
             strDatas.add("item  " + i);
         }
         adapterFragment.notifyDataSetChanged();
@@ -57,7 +57,7 @@ public class FragmentOne extends Fragment {
         }
         int length = strDatas.size();
         strDatas.addAll(newStrs);
-//        adapterFragment.notifyItemRangeChanged(length, newStrs.size());
+//        adapterFragment.notifyItemRangeChanged(length, newStrs.size());//这个方法刷新无效
         adapterFragment.notifyDataSetChanged();
     }
 

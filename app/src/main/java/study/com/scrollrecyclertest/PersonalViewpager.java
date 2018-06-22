@@ -12,7 +12,7 @@ import android.view.View;
 public class PersonalViewpager extends ViewPager {
 
     //是否可以进行滑动
-    private boolean canScroll = false;
+    private boolean canScroll = true;
 
     public PersonalViewpager(Context context) {
         super(context);
@@ -42,14 +42,7 @@ public class PersonalViewpager extends ViewPager {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-//        return super.onInterceptTouchEvent(ev) && canScroll;
-        return false;
-    }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent ev) {
-//        return super.onTouchEvent(ev) && canScroll;
-        return false;
+        return canScroll;
     }
 
 

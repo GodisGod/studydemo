@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager_main);
         lineTab = findViewById(R.id.line_tab);
         lineTab2 = findViewById(R.id.line_tab2);
-        viewPager.setCanScroll(false);
+        viewPager.setCanScroll(true);//设置viewpager不能左右滑动
         viewStatusBar = findViewById(R.id.view_status_bar);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
